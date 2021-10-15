@@ -40,7 +40,7 @@ fetch("https://ghibliapi.herokuapp.com/films") //requesting JSON
 
                     }
                 }
-            })
+            });
 
             /* reviewSubmission.addEventListener("submit", (event) => {
                 event.preventDefault();
