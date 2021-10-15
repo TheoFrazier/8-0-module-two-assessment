@@ -7,6 +7,7 @@ fetch("https://ghibliapi.herokuapp.com/films") //requesting JSON
 
         const dropDown = document.querySelector("#movie-selection")
         const form = document.querySelector("form")
+        const input = document.querySelector("#input")
 
 
         /* iteration */
