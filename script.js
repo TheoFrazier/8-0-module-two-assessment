@@ -16,11 +16,11 @@ const reviewSubmission = document.querySelector
 
 for (let movie of data) {
 
-    console.log(movie.title)
 
-    const movieOption = document.createElement("movieOption")
-    movieOption.textContent = movie.title;
-    dropDown.append("movieOption")
+
+    const option = document.createElement("option")
+    option.textContent = movie.title;
+    dropDown.append(option)
 }
 
 
