@@ -1,3 +1,7 @@
+body {
+    font-family: monospace;
+}
+
 #site-header {
     background-color: lavender;
     text-align: center;
@@ -6,4 +10,8 @@
 #site-header img {
     height: 200px;
     
+}
+
+#review-form {
+    text-align: center;
 }
