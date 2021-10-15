@@ -10,6 +10,7 @@ fetch("https://ghibliapi.herokuapp.com/films") //requesting JSON
         const input = document.querySelector("#input")
 
 
+
         /* iteration */
 
         for (let movie of data) {
@@ -47,11 +48,13 @@ fetch("https://ghibliapi.herokuapp.com/films") //requesting JSON
             /*We are letting the user submit the review for the CURRENT movie */
 
             const li = document.createElement('li')
-            li.innerHTML = `<b>${dropDown.value} :</b>
-                ${form.value}`
+            reviewData = document.querySelector("#usersReviewSubmission").value
+            li.innerHTML = `<b>${dropDown.value} :</b> ${reviewData}`
 
             const ul = document.querySelector("ul")
             ul.append(li)
+            
+            form.reset()
 
         });
 
