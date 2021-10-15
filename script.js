@@ -8,8 +8,8 @@ fetch("https://ghibliapi.herokuapp.com/films") //requesting JSON
         const dropDown = document.querySelector("#movie-selection")
         const form = document.querySelector("review-form")
         const userUnput = document.querySelector
-        const reviewSubmission = document.querySelector
-        
+        const reviewSubmission = document.querySelector("#submit-review")
+
 
 
 
@@ -30,10 +30,10 @@ fetch("https://ghibliapi.herokuapp.com/films") //requesting JSON
                         console.log(currentMovie.title)
 
                         const displayInfo = document.querySelector("#movie-information")
-                        
+
 
                         displayInfo.innerHTML =
-                            `<h2>${currentMovie.title}</h2
+                            `<h3>${currentMovie.title}</h3>
                             <p>${currentMovie.release_date}</p>
                             <p>${currentMovie.description}>/p>`;
 
@@ -41,11 +41,31 @@ fetch("https://ghibliapi.herokuapp.com/films") //requesting JSON
                     }
                 }
             })
+
+            /* reviewSubmission.addEventListener("submit", (event) => {
+                event.preventDefault();
+
+                /* We are letting the user submit the review for the CURRENT movie 
+
+                const submittedReviews = document.createElement('li')
+                submittedReviews.innerHTML = `<b>${dropDown.value} :</b>
+                ${reviewSubmission.value}`
+
+                const reviewAppears = document.querySelector("#review-display")
+                reviewAppears.append(submittedReviews)
+
+            })
+            */
         }
-    })
 
 
-            /* Use change not "click" */
+    }).catch((error) => {
+        console.log(error)
+    });
+
+
+
+
 
 
 

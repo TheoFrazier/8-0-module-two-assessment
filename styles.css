@@ -4,12 +4,13 @@ body, html {
 
 body {
     font-family: monospace;
+    margin: 0 auto;
 }
 
 #site-header {
     background-color: skyblue;
     text-align: center;
-    width: 80%;
+    width: 75%;
 }
 
 #site-header img {
@@ -17,11 +18,9 @@ body {
     
 }
 
-
-
-
-
 #review-form {
     text-align: center;
-    width: 80%;
 }
+
+
+
