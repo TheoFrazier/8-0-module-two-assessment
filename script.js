@@ -29,10 +29,10 @@ fetch("https://ghibliapi.herokuapp.com/films") //requesting JSON
                 if (dropDown.value === currentMovie.title) {
                     console.log(currentMovie.title)
 
-                    const displayInfo = document.querySelector("#movie-information")
+                    const display = document.querySelector("#display-info")
 
 
-                    displayInfo.innerHTML =
+                    display.innerHTML =
                         `<h3>${currentMovie.title}</h3>
                             <p>${currentMovie.release_date}</p>
                             <p>${currentMovie.description}</p>`;
