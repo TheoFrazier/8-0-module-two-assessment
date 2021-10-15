@@ -5,6 +5,7 @@ body {
 #site-header {
     background-color: lavender;
     text-align: center;
+    width: 80%;
 }
 
 #site-header img {
@@ -12,6 +13,11 @@ body {
     
 }
 
+
+
+
+
 #review-form {
     text-align: center;
+    width: 80%;
 }
